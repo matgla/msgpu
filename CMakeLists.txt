@@ -42,4 +42,6 @@ include(pico_sdk_init)
 
 pico_sdk_init()
 
-message ("PICO COM: ${PICO_COMPILER_CXX}")
+enable_language(ASM C CXX) 
+
+add_subdirectory(src)
